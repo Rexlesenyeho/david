@@ -1,0 +1,79 @@
+/* Full screen background */
+body {
+  margin: 0; /* Remove default margin */
+}
+
+#dashboard {
+  min-height: 100vh; /* Full height of the viewport */
+  background-color: #1a1a1a; /* Set your desired background color */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center align child elements */
+  justify-content: center; /* Center vertically */
+  padding: 20px; /* Optional padding */
+}
+
+/* Keep existing styles */
+.chart-container {
+  margin-top: 30px;
+  background-color: #111;
+  border-radius: 12px;
+  padding: 20px;
+  width: 100%; /* Make chart container span the width */
+  max-width: 600px; /* Set max-width for chart */
+  height: 400px;
+  overflow: hidden;
+  margin: 20px auto; /* Center chart */
+}
+
+.chart-slider {
+  display: flex; /* Arrange items horizontally */
+  align-items: center; /* Vertically align items */
+  position: relative; /* Allow absolutely positioned elements within */
+}
+
+/* Style for the image containers */
+.chart-images {
+  display: flex; /* Make images in a row */
+  overflow: hidden; /* Hide images that slide out */
+  max-width: 50px; /* Set width of visible images area */
+}
+
+.left {
+  margin-right: 10px; /* Space between left images and chart */
+}
+
+.right {
+  margin-left: 10px; /* Space between right images and chart */
+}
+
+.chart-image {
+  width: 40px; /* Set width for images */
+  height: auto; /* Maintain aspect ratio */
+  transition: transform 0.5s ease; /* Smooth transition for sliding effect */
+}
+
+/* Font and canvas styles */
+.chart-container canvas {
+  width: 100% !important;
+  height: 100% !important;
+  background-color: #2222225e;
+  border-radius: 8px;
+}
+
+/* Carousel Styles */
+.carousel-container {
+  position: relative;
+  max-width: 300px; /* Adjust based on your requirements */
+  overflow: hidden; /* Hide the images that are not active */
+  margin: 0 auto; /* Center the carousel */
+}
+
+.carousel-image {
+  width: 100%; /* Makes the image fit the container */
+  transition: opacity 1s ease; /* Smooth transition for opacity */
+}
+
+.carousel-image:not(.active) {
+  display: none; /* Hide inactive images */
+}

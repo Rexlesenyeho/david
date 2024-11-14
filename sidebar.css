@@ -1,0 +1,75 @@
+.sidebar {
+  width: 100%; /* Full width */
+  background-color: #2c3e50;
+  color: white;
+  height: 60px; /* Adjust height as needed */
+  position: fixed; /* Keep it fixed at the top */
+  top: 0;
+  left: 0;
+  padding: 0; /* Remove padding to fit the navigation better */
+  display: flex; /* Flex display to align items */
+  align-items: center; /* Center items vertically */
+}
+
+.sidebar nav {
+  flex-grow: 1; /* Allow nav to take available space */
+}
+
+.sidebar ul {
+  display: flex; /* Change to flex for horizontal layout */
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 0 15px; /* Horizontal margin */
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  display: block;
+  padding: 10px; /* Add padding for better clickable area */
+  transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+  background-color:white;
+}
+
+.app-container {
+  display: flex;
+  margin-top: 60px; /* Add margin to the top to avoid content being hidden behind fixed header */
+}
+
+.content {
+  padding: 20px;
+  flex-grow: 1;
+}
+
+/* Optional: Styling for the logout button */
+.logout-button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #c0392b;
+}
+
+.signup-link {
+  font-size: 16px;
+  text-decoration: none;
+  color: #2980b9;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+}
